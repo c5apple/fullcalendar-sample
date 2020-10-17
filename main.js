@@ -64,7 +64,8 @@
         console.groupEnd();
         // 元に戻す
         // info.revert();
-      }
+      },
+      eventTimeFormat: { hour: 'numeric', minute: '2-digit' },
     });
     calendar.render();
   });
