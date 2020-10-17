@@ -17,6 +17,11 @@
       },
       locale: 'ja',
       editable: true,
+      businessHours: {
+        daysOfWeek: [ 1, 2, 3, 4, 5 ],
+        startTime: '9:00',
+        endTime: '18:00',
+      },
       events: [
         // 時間指定
         {
@@ -76,7 +81,7 @@
   document.getElementById('btn-add').addEventListener('click', function () {
     calendar.addEvent({
       title: 'New!!',
-      start: '2020-10-01'
+      start: '2020-10-01 20:00'
     });
   });
 
