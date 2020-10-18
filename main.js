@@ -13,8 +13,13 @@
         center: 'title',
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
       },
-      dateClick: function (info) {
-        console.log('clicked on ' + info.dateStr);
+      selectable: true,
+      select: function (info) {
+        console.group('select');
+        console.log('Start: ', info.start);
+        console.log('End: ', info.end);
+        console.log('AllDay: ', info.allDay);
+        console.groupEnd();
       },
       locale: 'ja',
       editable: true,
