@@ -7,6 +7,7 @@
     var calendarEl = document.getElementById('calendar');
     calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'dayGridMonth',
+      themeSystem: 'bootstrap',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
